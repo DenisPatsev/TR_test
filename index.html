@@ -8,6 +8,9 @@
   <title>ERS</title>
   <link rel="stylesheet" href="TemplateData/style.css" />
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <script src="https://sad.adsgram.ai/js/sad.min.js"></script>
+  <script src="https://static.sonartech.io/lib/1.0.0/sonar.js?appId=app_291e8271&isDebug=true"></script>
 </head>
 
 <body>
@@ -45,13 +48,13 @@
 
     createUnityInstance(document.querySelector("#unity-canvas"), 
     {
-        dataUrl: "Build/TNRCNG.data",
-        frameworkUrl: "Build/TNRCNG.framework.js",
-        codeUrl: "Build/TNRCNG.wasm",
+        dataUrl: "Build/TNRCNG.data.gz",
+        frameworkUrl: "Build/TNRCNG.framework.js.gz",
+        codeUrl: "Build/TNRCNG.wasm.gz",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "KVIP",
         productName: "ERS",
-        productVersion: "1.0",
+        productVersion: "0.1",
       }).then((unityInstance) => 
       {
         onUnityLoaded();
